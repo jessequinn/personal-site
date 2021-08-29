@@ -1,22 +1,12 @@
 <template>
 <nav class="fixed top-0 z-50 w-full font-semibold lg:sticky lg:top-0 0 body-font lg:mb-8 2xl:mb-24">
     <div :class="{ 'inner-shadow' : navScrolled && !navTriggered, 'bg-white': navScrolled }" class="relative z-50 flex items-center justify-between px-6 py-5 mx-auto transition-all duration-200 lg:relative lg:px-16">
-        <!-- <span class="text-md md:text-xl">RB Technology</span> -->
-        <NavBrand class="lg:h-10 h-7" />
         <div class="hidden space-x-4 lg:block">
             <slot />
         </div>
         <div class="flex items-center space-x-4">
-            <nuxt-link class="text-gray-500 transition duration-200 ease-in-out hover:text-gray-900" :to="switchLocalePath('nl')">NL</nuxt-link>
             <nuxt-link class="text-gray-500 transition duration-200 ease-in-out hover:text-gray-900" :to="switchLocalePath('en')">EN</nuxt-link>
-            <a href="#" class="items-center hidden px-6 py-3 space-x-2 transition duration-300 transform rounded-full hover:scale-110 md:flex hover:opacity-80 bg-light-blue text-primary-blue">
-                <span class="text-sm md:text-md">Check Linkedin</span>
-                <LinkedinIcon class="inline w-5 h-5 fill-primary-blue" />
-            </a>
-            <div class="flex items-center space-x-2 md:hidden">
-                <LinkedinIcon class="inline w-5 h-5 fill-primary-blue" />
-                <div @click="navTriggered = !navTriggered" class="menu-icon" :class="{ active : navTriggered }"></div>
-            </div>
+            <nuxt-link class="text-gray-500 transition duration-200 ease-in-out hover:text-gray-900" :to="switchLocalePath('pt')">PT</nuxt-link>
         </div>
     </div>
     <!-- side menu -->
@@ -26,8 +16,7 @@
                 <slot />
             </div>
             <div class="fixed bottom-0 flex justify-between w-full p-8">
-                <span class="text-sm tracking-wider text-gray-500">rbtechnology@gmail.com</span>
-                <span class="text-sm tracking-wider text-gray-500">+31 6 12345678</span>
+                <span class="text-sm tracking-wider text-gray-500">me@jessequinn.info</span>
             </div>
         </div>
     </transition>

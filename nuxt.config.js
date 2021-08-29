@@ -7,7 +7,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'RB Technology',
+    title: 'INFO',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -58,7 +58,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'nl'
+      lang: 'en'
     }
   },
 
@@ -77,17 +77,17 @@ export default {
         name: 'English',
       },
       {
-        code: 'nl',
-        iso: 'nl-NL',
-        name: 'Dutch',
+        code: 'pt',
+        iso: 'pt-BR',
+        name: 'Portuguese',
       }
     ],
-    defaultLocale: 'nl',
+    defaultLocale: 'en',
     vueI18n: {
-      fallbackLocale: 'nl',
+      fallbackLocale: 'pt',
       messages: {
         en: require('./locales/en.json'),
-        nl: require('./locales/nl.json')
+        nl: require('./locales/pt.json')
       }
     }
   },
